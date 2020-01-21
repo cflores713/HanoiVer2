@@ -3,7 +3,7 @@
 
 Design and analyze an algorithm for solving a variant of the Tower of Hanoi in C++.
 
-![Image of demo](https://media.giphy.com/media/JSdXWZnZvaB6I8oude/giphy.gif)
+![Image of demo](https://media.giphy.com/media/dUg5OxXhfuzPc89l0n/giphy.gif)
 
 ![Image of graph](https://github.com/cflores713/HanoiVer2/blob/master/ss.png)
 
