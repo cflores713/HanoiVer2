@@ -18,6 +18,7 @@ private:
     int size, count, recursive;
     // The higher the number the faster the animation will run
     double delay;
+    // Use visualize to toggle between displaying the graph (or not).
     bool visualize;
 
 public:
@@ -43,6 +44,7 @@ public:
     // Give a summary of the algorithm's complexities
     void showStatus();
 
+    // Turn the visualizations off.
     void turnOffGraphics();
 
     // Create a txt file of the first 100 moves and the last 100 moves.
