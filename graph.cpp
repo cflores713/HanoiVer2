@@ -43,7 +43,7 @@ void graph::move(const string i, const string f){
     // Get pointers to the two towers
     auto from = find(i), to = find(f);
     // If you successfully returned two pointers to a tower then:
-    if( (from != nullptr) && (to != nullptr) ){
+    if( (from) && (to) ){
         // Store the value of the disc to be moved in the temporary variable
         temp = from->top();
         // Remove the disc from tower i
@@ -80,7 +80,7 @@ void graph::move(const string i, const string v1, const string v2, const string 
 void graph::print(){
     // Make an array of pointers to all five towers
     stack<int>* arr[6] = {&s, &a1, &a2, &a3, &a4, &d};
-    // Declare 5 empty towers to store the temporary data
+    // Declare 6 empty towers to store the temporary data
     stack<int> clr[6];
     // Unload the data from the towers to the temp stack and print the information
     for (int i = 0; i < size ; i++){
