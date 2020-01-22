@@ -10,7 +10,6 @@ void H4d(int n, string a, string b, string c, string d, string e, string f, grap
 void H3s(int n, string a, string b, string c, string d, string e, string f, graph& g);
 void H3d(int n, string a, string b, string c, string d, string e, string f, graph& g);
 
-
 // Solve the problem with the helper functions
 void Hanoi(const int n, const string a, const string b, const string c, const string d, const string e, const string f, graph &g){
     if (n){
@@ -18,7 +17,7 @@ void Hanoi(const int n, const string a, const string b, const string c, const st
         H3s(n-1, a, b, c, d, e, f, g);
         // Move one disc from Start to Dest
         g.move(a, b, f);
-        // Move N-1 discs from Aux1 to Dest
+        // Move N-1 discs from Aux3 to Dest
         H3d(n-1, a, b, c, d, e, f, g);
     }
 }
@@ -57,7 +56,7 @@ int main() {
     cout << "Enter the speed in the animation:\n    (1 is slow and 10 is fast)    " << endl;
     cin >> animation;
     graph demo(num, 10-animation);
-    Hanoi(num, "start", "aux1", "aux2","aux3", "aux4","dest", demo);
+    Hanoi(num, "start", "aux1", "aux2", "aux3", "aux4", "dest", demo);
     demo.showStatus();
     return 0;
 }
